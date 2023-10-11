@@ -20,6 +20,14 @@ public class CellPhone {
         phoneNumber = "";
         owner = "";
     }
+    //arg const
+    public CellPhone(int SerialNumber, String model, String carrier, String phoneNumber,String owner){
+        this.serialNumber = serialNumber;
+        this.model = model;
+        this.carrier = carrier;
+        this.phoneNumber = phoneNumber;
+        this.owner = owner;
+    }
 
     //getters
 
@@ -56,4 +64,14 @@ public class CellPhone {
     public void setOwner(String owner){
         this.owner = owner;
     }
+
+    //custom methods
+
+    public void dial(String phoneNumber){
+        System.out.println(this.owner + "'s" + " phone " + " is calling " + phoneNumber);
+
+    }
+
+
+
 }
